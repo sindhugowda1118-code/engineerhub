@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EngineerHub — Engineering, Without the Friction.</title>
     <meta
       name="description"
-      content="EngineerHub is the digital command center for engineers — tools, AI, projects, learning, exams, career, and portfolio built for the next generation of engineers."
+      content="EngineerHub — The digital command center for engineers. Tools, AI, projects, learning, exams, career, portfolio, and community for the next generation of engineers."
     />
+    <title>EngineerHub — Engineering, Without the Friction.</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,838 +17,884 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-shell">
-      <header class="topbar">
-        <div class="container nav-wrap">
-          <a href="#home" class="brand" aria-label="EngineerHub home">
-            <span class="brand-mark">E</span>
-            <span class="brand-word">EngineerHub</span>
-          </a>
+    <div class="noise"></div>
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <a href="#home" class="brand" aria-label="EngineerHub home">
+          <span class="brand-mark">E</span>
+          <span class="brand-word">EngineerHub</span>
+        </a>
 
-          <nav class="nav" aria-label="Main navigation">
-            <a href="#tools">Tools</a>
-            <a href="#engineerai">EngineerAI</a>
-            <a href="#projects">Projects</a>
-            <a href="#learn">Learn</a>
-            <a href="#career">Career</a>
-            <a href="#pricing">Pricing</a>
-          </nav>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#platform">Platform</a>
+          <a href="#tools">Tools</a>
+          <a href="#engineerai">EngineerAI</a>
+          <a href="#projects">Projects</a>
+          <a href="#learn">Learn</a>
+          <a href="#pricing">Pricing</a>
+        </nav>
 
-          <div class="nav-actions">
-            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-              <span class="theme-icon">◐</span>
-            </button>
-            <button class="ghost-btn">Log in</button>
-            <button class="primary-btn">Explore EngineerHub</button>
-          </div>
-
-          <button class="mobile-menu" id="mobileMenu" aria-label="Toggle menu">
+        <div class="nav-actions">
+          <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">
+            <span class="theme-icon">◐</span>
+          </button>
+          <button class="ghost-btn hidden-mobile">Log in</button>
+          <button class="primary-btn hidden-mobile">Explore EngineerHub</button>
+          <button class="mobile-menu" id="mobileMenu" aria-label="Open navigation menu">
             <span></span>
             <span></span>
             <span></span>
           </button>
         </div>
-      </header>
+      </div>
+    </header>
 
-      <main id="home">
-        <section class="hero section">
-          <div class="container hero-grid">
-            <div class="hero-copy">
-              <div class="eyebrow">
-                <span class="dot"></span>
-                ENGINEERING OPERATING SYSTEM
-              </div>
-              <h1>Engineering, Without the Friction.</h1>
-              <p>
-                Tools, AI, projects, learning and career guidance — built for the next
-                generation of engineers.
-              </p>
+    <main id="home">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="dot"></span> ENGINEERING OPERATING SYSTEM</div>
+            <h1>Engineering, Without the Friction.</h1>
+            <p>
+              Tools, AI, projects, learning and career guidance — built for the next generation of engineers.
+            </p>
 
-              <div class="hero-actions">
-                <a href="#pricing" class="primary-btn large">Explore EngineerHub</a>
-                <a href="#engineerai" class="secondary-btn large">Meet EngineerAI</a>
-              </div>
-
-              <div class="hero-meta">
-                <div>
-                  <strong>18k+</strong>
-                  <span> engineers active</span>
-                </div>
-                <div>
-                  <strong>4.9/5</strong>
-                  <span> product rating</span>
-                </div>
-                <div>
-                  <strong>42+</strong>
-                  <span> engineering tools</span>
-                </div>
-              </div>
+            <div class="hero-actions">
+              <a href="#platform" class="primary-btn large">Explore EngineerHub</a>
+              <a href="#engineerai" class="secondary-btn large">Meet EngineerAI</a>
             </div>
 
-            <div class="hero-visual" aria-label="Premium product dashboard preview">
-              <div class="dashboard-shell">
-                <div class="dashboard-topbar">
-                  <div class="window-chrome">
-                    <span></span><span></span><span></span>
-                  </div>
-                  <div class="topbar-pill">EngineerOS</div>
+            <div class="hero-metrics">
+              <div>
+                <strong>18k+</strong>
+                <span>engineers active</span>
+              </div>
+              <div>
+                <strong>4.9/5</strong>
+                <span>product rating</span>
+              </div>
+              <div>
+                <strong>42+</strong>
+                <span>engineering tools</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="dashboard-shell">
+              <div class="dashboard-header">
+                <div class="window-controls">
+                  <span></span>
+                  <span></span>
+                  <span></span>
                 </div>
+                <div class="status-pill">EngineerOS</div>
+              </div>
 
-                <div class="dashboard-content">
-                  <aside class="sidebar-mini">
-                    <span class="active"></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </aside>
+              <div class="dashboard-body">
+                <aside class="dashboard-sidebar">
+                  <span class="active"></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </aside>
 
-                  <div class="workspace-grid">
-                    <div class="panel narrow">
-                      <label>CGPA</label>
-                      <div class="metric">8.82</div>
-                      <div class="sparkline">
-                        <span></span><span></span><span></span><span></span><span></span>
-                      </div>
-                    </div>
-
-                    <div class="panel wider">
-                      <label>Learning progress</label>
-                      <div class="progress-wrap">
-                        <div class="progress-bar"><span style="width: 72%"></span></div>
-                        <strong>72%</strong>
-                      </div>
-                    </div>
-
-                    <div class="panel tall">
-                      <label>Project progress</label>
-                      <ul class="mini-list">
-                        <li><span>Autonomous rover</span><b>87%</b></li>
-                        <li><span>Solar tracker</span><b>63%</b></li>
-                        <li><span>IoT lab</span><b>71%</b></li>
-                      </ul>
-                    </div>
-
-                    <div class="panel wide">
-                      <label>Career roadmap</label>
-                      <div class="roadmap-steps">
-                        <span class="done">Build portfolio</span>
-                        <span class="done">Internship prep</span>
-                        <span class="active">Apply</span>
-                      </div>
-                    </div>
-
-                    <div class="panel narrow">
-                      <label>Upcoming exams</label>
-                      <div class="exam-block">
-                        <strong>7 DAYS TO EXAM</strong>
-                        <small>Thermodynamics</small>
-                      </div>
-                    </div>
-
-                    <div class="panel wide chart-panel">
-                      <label>AI recommendations</label>
-                      <div class="bars">
-                        <span style="height: 35%"></span>
-                        <span style="height: 55%"></span>
-                        <span style="height: 70%"></span>
-                        <span style="height: 82%"></span>
-                        <span style="height: 93%"></span>
-                        <span style="height: 80%"></span>
-                      </div>
+                <div class="workspace-grid">
+                  <div class="panel panel-metric">
+                    <label>CGPA</label>
+                    <div class="metric">8.82</div>
+                    <div class="sparkline">
+                      <span></span><span></span><span></span><span></span><span></span>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
-        <section class="company-strip">
-          <div class="container strip-wrap">
-            <span>Mechanical</span>
-            <span>CSE</span>
-            <span>ECE</span>
-            <span>Robotics</span>
-            <span>AI</span>
-            <span>IoT</span>
-            <span>Energy</span>
-            <span>Career</span>
-          </div>
-        </section>
-
-        <section class="section" id="tools">
-          <div class="container">
-            <div class="section-head">
-              <div>
-                <span class="kicker">Engineering tools</span>
-                <h2>Your Engineering Toolkit.</h2>
-              </div>
-              <div class="section-actions">
-                <button class="chip active" data-filter="all">All</button>
-                <button class="chip" data-filter="math">Math</button>
-                <button class="chip" data-filter="electrical">Electrical</button>
-                <button class="chip" data-filter="civil">Civil</button>
-                <button class="chip" data-filter="cs">CS</button>
-              </div>
-            </div>
-
-            <div class="tool-grid">
-              <article class="tool-card" data-category="math">
-                <div class="card-icon">∑</div>
-                <h3>Scientific Calculator</h3>
-                <p>Derivations, matrix math, units and engineering formulas.</p>
-              </article>
-
-              <article class="tool-card" data-category="math">
-                <div class="card-icon">⎡⎤</div>
-                <h3>Matrix Solver</h3>
-                <p>Compute inversion, rank, eigen values and system solutions.</p>
-              </article>
-
-              <article class="tool-card" data-category="math">
-                <div class="card-icon">ƒ</div>
-                <h3>Equation Solver</h3>
-                <p>Polynomial, linear and differential equation solving.</p>
-              </article>
-
-              <article class="tool-card" data-category="mechanical">
-                <div class="card-icon">⍟</div>
-                <h3>Beam Calculator</h3>
-                <p>Shear force, bending moment and beam loading analysis.</p>
-              </article>
-
-              <article class="tool-card" data-category="mechanical">
-                <div class="card-icon">τ</div>
-                <h3>Torque Calculator</h3>
-                <p>Solid mechanics analysis for shafts, joints and drivetrains.</p>
-              </article>
-
-              <article class="tool-card" data-category="electrical">
-                <div class="card-icon">Ω</div>
-                <h3>Ohm's Law</h3>
-                <p>V, I, R calculations with live circuit diagrams.</p>
-              </article>
-
-              <article class="tool-card" data-category="electrical">
-                <div class="card-icon">⚡</div>
-                <h3>Circuit Calculator</h3>
-                <p>Series/parallel networks, power and load analysis.</p>
-              </article>
-
-              <article class="tool-card" data-category="electrical">
-                <div class="card-icon">▣</div>
-                <h3>Resistor Calculator</h3>
-                <p>Color coding and equivalent resistor computation.</p>
-              </article>
-
-              <article class="tool-card" data-category="civil">
-                <div class="card-icon">▦</div>
-                <h3>Concrete Calculator</h3>
-                <p>Mix design, quantity estimation and structural calculations.</p>
-              </article>
-
-              <article class="tool-card" data-category="cs">
-                <div class="card-icon">⌘</div>
-                <h3>Numerical Methods</h3>
-                <p>Root finding, interpolation and iterative solvers.</p>
-              </article>
-
-              <article class="tool-card" data-category="cs">
-                <div class="card-icon">◍</div>
-                <h3>Engineering Statistics</h3>
-                <p>Distribution logic, sampling tools and data interpretation.</p>
-              </article>
-
-              <article class="tool-card" data-category="mechanical">
-                <div class="card-icon">≋</div>
-                <h3>Stress Calculator</h3>
-                <p>Stress, strain and elasticity checks built for mechanics.</p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="section alt-panel" id="engineerai">
-          <div class="container">
-            <div class="section-head narrow-head">
-              <div>
-                <span class="kicker">EngineerAI</span>
-                <h2>Meet Your Engineering Copilot.</h2>
-              </div>
-            </div>
-
-            <div class="ai-layout">
-              <div class="ai-chat-panel">
-                <div class="ai-header">
-                  <div class="chat-bubble user">User</div>
-                  <div class="chat-bubble ai">EngineerAI</div>
-                </div>
-
-                <div class="conversation">
-                  <div class="msg user-msg">
-                    <span>Explain Bernoulli's equation like I'm seeing it for the first time.</span>
-                  </div>
-                  <div class="msg ai-msg">
-                    <span>
-                      Concept • Formula • Visual explanation • Worked example • Practice question
-                    </span>
-                  </div>
-                </div>
-
-                <div class="ai-actions">
-                  <button>Concept explain</button>
-                  <button>Problem-solving</button>
-                  <button>Study plan</button>
-                  <button>Viva prep</button>
-                </div>
-              </div>
-
-              <div class="ai-insights">
-                <div class="insight-card">
-                  <div class="label-row">
-                    <span class="mini-kicker">Project assistance</span>
-                    <span class="status ok">Active</span>
-                  </div>
-                  <h3>Rover design review</h3>
-                  <p>Check power distribution, torque requirements and control logic.</p>
-                </div>
-
-                <div class="insight-card highlight-card">
-                  <div class="label-row">
-                    <span class="mini-kicker">Code assistance</span>
-                    <span class="status warn">Live</span>
-                  </div>
-                  <h3>Embedded firmware logic</h3>
-                  <p>Generate sensor fusion logic, finite state machines and testing notes.</p>
-                </div>
-
-                <div class="insight-card">
-                  <div class="label-row">
-                    <span class="mini-kicker">Documentation</span>
-                    <span class="status neutral">Draft</span>
-                  </div>
-                  <h3>Report generation</h3>
-                  <p>Turn experiments and checks into polished engineering documentation.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section" id="projects">
-          <div class="container">
-            <div class="section-head">
-              <div>
-                <span class="kicker">Project hub</span>
-                <h2>Build Something Real.</h2>
-              </div>
-              <button class="ghost-btn">View all projects</button>
-            </div>
-
-            <div class="project-grid">
-              <article class="project-card">
-                <div class="tag-row"><span>Robotics</span><span>Advanced</span></div>
-                <h3>Autonomous Maze Rover</h3>
-                <div class="meta-grid">
-                  <div><label>Cost</label><strong>₹7.5k</strong></div>
-                  <div><label>Time</label><strong>4 weeks</strong></div>
-                  <div><label>Skills</label><strong>ROS, C++</strong></div>
-                  <div><label>Parts</label><strong>MCU, motors</strong></div>
-                </div>
-                <button class="secondary-btn small">Start Project</button>
-              </article>
-
-              <article class="project-card">
-                <div class="tag-row"><span>AI</span><span>Intermediate</span></div>
-                <h3>Energy Prediction Model</h3>
-                <div class="meta-grid">
-                  <div><label>Cost</label><strong>₹4.2k</strong></div>
-                  <div><label>Time</label><strong>3 weeks</strong></div>
-                  <div><label>Skills</label><strong>Python, ML</strong></div>
-                  <div><label>Parts</label><strong>Sensor data</strong></div>
-                </div>
-                <button class="secondary-btn small">Start Project</button>
-              </article>
-
-              <article class="project-card">
-                <div class="tag-row"><span>IoT</span><span>Beginner</span></div>
-                <h3>Smart Irrigation System</h3>
-                <div class="meta-grid">
-                  <div><label>Cost</label><strong>₹3.1k</strong></div>
-                  <div><label>Time</label><strong>2 weeks</strong></div>
-                  <div><label>Skills</label><strong>ESP32, APIs</strong></div>
-                  <div><label>Parts</label><strong>Soil sensor</strong></div>
-                </div>
-                <button class="secondary-btn small">Start Project</button>
-              </article>
-
-              <article class="project-card">
-                <div class="tag-row"><span>Mechanical</span><span>Advanced</span></div>
-                <h3>3D Printed Gripper</h3>
-                <div class="meta-grid">
-                  <div><label>Cost</label><strong>₹2.8k</strong></div>
-                  <div><label>Time</label><strong>2 weeks</strong></div>
-                  <div><label>Skills</label><strong>CAD, FEA</strong></div>
-                  <div><label>Parts</label><strong>PLA, servo</strong></div>
-                </div>
-                <button class="secondary-btn small">Start Project</button>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="section alt-panel" id="learn">
-          <div class="container">
-            <div class="section-head">
-              <div>
-                <span class="kicker">Learning</span>
-                <h2>Sophisticated learning, built for engineers.</h2>
-              </div>
-              <button class="ghost-btn">Track progress</button>
-            </div>
-
-            <div class="learning-layout">
-              <div class="curriculum-tree">
-                <div class="branch-item active">
-                  <div class="branch-title">CSE</div>
-                  <ul>
-                    <li>Semester 6</li>
-                    <li>Operating Systems</li>
-                    <li>Module 4 • Memory Management</li>
-                    <li>Topic • Paging & Virtual Memory</li>
-                  </ul>
-                </div>
-                <div class="branch-item">
-                  <div class="branch-title">ECE</div>
-                  <ul>
-                    <li>Semester 5</li>
-                    <li>Signals & Systems</li>
-                    <li>Module 2 • Frequency domain</li>
-                    <li>Topic • Fourier Transform</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="learning-panel">
-                <div class="topic-header">
-                  <span class="topic-tag">Topic</span>
-                  <h3>Bernoulli's Principle</h3>
-                </div>
-
-                <div class="topic-grid">
-                  <div>
-                    <label>Concept</label>
-                    <p>Energy conservation in fluid flow and pressure–velocity trade-offs.</p>
-                  </div>
-                  <div>
-                    <label>Visual</label>
-                    <p>Streamline diagram with pressure and velocity zones.</p>
-                  </div>
-                  <div>
-                    <label>Formula</label>
-                    <p>P + 0.5ρv² + ρgh = constant</p>
-                  </div>
-                  <div>
-                    <label>Practice</label>
-                    <p>3 scenario-based questions with instant evaluation.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section" id="exams">
-          <div class="container">
-            <div class="section-head">
-              <div>
-                <span class="kicker">Exam mode</span>
-                <h2>Your Exam Command Center</h2>
-              </div>
-            </div>
-
-            <div class="exam-layout">
-              <div class="exam-blocks">
-                <div class="exam-card big">
-                  <span>7 DAYS TO EXAM</span>
-                  <h3>Thermodynamics</h3>
-                  <p>Personalized prep schedule generated from your current performance.</p>
-                </div>
-                <div class="mini-card">Mock tests</div>
-                <div class="mini-card">Flashcards</div>
-                <div class="mini-card">Formula sheets</div>
-                <div class="mini-card">Viva prep</div>
-                <div class="mini-card">Previous questions</div>
-              </div>
-
-              <div class="schedule-panel">
-                <ul>
-                  <li><span>Day 1</span><b>Force & stress revision</b></li>
-                  <li><span>Day 2</span><b>Numerical practice set</b></li>
-                  <li><span>Day 3</span><b>Mock test 01</b></li>
-                  <li><span>Day 4</span><b>Viva questions review</b></li>
-                  <li><span>Day 5</span><b>Formula sheet recall</b></li>
-                  <li><span>Day 6</span><b>Weak topic remediation</b></li>
-                  <li><span>Day 7</span><b>Final revision sprint</b></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section alt-panel" id="career">
-          <div class="container">
-            <div class="section-head">
-              <div>
-                <span class="kicker">Career center</span>
-                <h2>Design Your Engineering Career.</h2>
-              </div>
-            </div>
-
-            <div class="career-paths">
-              <div class="career-column">
-                <h3>Mechanical</h3>
-                <ul>
-                  <li>Robotics</li>
-                  <li>Automotive</li>
-                  <li>Aerospace</li>
-                  <li>Manufacturing</li>
-                  <li>Energy</li>
-                  <li>Software</li>
-                  <li>Product</li>
-                </ul>
-              </div>
-              <div class="career-column">
-                <h3>CSE</h3>
-                <ul>
-                  <li>Software</li>
-                  <li>AI/ML</li>
-                  <li>Data</li>
-                  <li>Cybersecurity</li>
-                  <li>Cloud</li>
-                  <li>Product</li>
-                </ul>
-              </div>
-              <div class="career-column">
-                <h3>ECE</h3>
-                <ul>
-                  <li>Embedded</li>
-                  <li>VLSI</li>
-                  <li>Semiconductor</li>
-                  <li>Robotics</li>
-                  <li>Communications</li>
-                  <li>Software</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section" id="resume">
-          <div class="container">
-            <div class="section-head">
-              <div>
-                <span class="kicker">Resume builder</span>
-                <h2>Build a resume that reads like a real engineer.</h2>
-              </div>
-            </div>
-
-            <div class="resume-layout">
-              <div class="resume-panel">
-                <div class="resume-paper">
-                  <div class="paper-header">
-                    <div>
-                      <h3>Rohit Sharma</h3>
-                      <p>Mechanical Engineer • Robotics</p>
+                  <div class="panel panel-progress">
+                    <label>Learning progress</label>
+                    <div class="progress-row">
+                      <div class="progress-bar"><span style="width: 72%"></span></div>
+                      <strong>72%</strong>
                     </div>
-                    <span>Portfolio-ready</span>
                   </div>
-                  <div class="paper-section">
-                    <h4>Projects</h4>
-                    <ul>
-                      <li>Autonomous rover for warehouse mapping</li>
-                      <li>Battery health monitoring for EV prototype</li>
+
+                  <div class="panel panel-tall">
+                    <label>Project progress</label>
+                    <ul class="mini-list">
+                      <li><span>Autonomous rover</span><b>87%</b></li>
+                      <li><span>Solar tracker</span><b>63%</b></li>
+                      <li><span>IoT lab</span><b>71%</b></li>
                     </ul>
                   </div>
-                  <div class="paper-section">
-                    <h4>Skills</h4>
-                    <p>SolidWorks, MATLAB, Arduino, Embedded C, CAD, FEA</p>
+
+                  <div class="panel panel-roadmap">
+                    <label>Career roadmap</label>
+                    <div class="roadmap-chips">
+                      <span class="done">Build portfolio</span>
+                      <span class="done">Internship prep</span>
+                      <span class="active">Apply</span>
+                    </div>
+                  </div>
+
+                  <div class="panel panel-exam">
+                    <label>Upcoming exams</label>
+                    <div class="exam-box">
+                      <strong>7 DAYS TO EXAM</strong>
+                      <small>Thermodynamics</small>
+                    </div>
+                  </div>
+
+                  <div class="panel panel-chart">
+                    <label>AI recommendations</label>
+                    <div class="bars">
+                      <span style="height: 35%"></span>
+                      <span style="height: 52%"></span>
+                      <span style="height: 72%"></span>
+                      <span style="height: 88%"></span>
+                      <span style="height: 93%"></span>
+                      <span style="height: 80%"></span>
+                    </div>
                   </div>
                 </div>
               </div>
-
-              <div class="resume-tools">
-                <div class="tool-item">Education</div>
-                <div class="tool-item">Skills</div>
-                <div class="tool-item">Projects</div>
-                <div class="tool-item">Experience</div>
-                <div class="tool-item">internships</div>
-                <div class="tool-item">Certifications</div>
-                <div class="tool-item highlight">Export PDF</div>
-              </div>
             </div>
-          </div>
-        </section>
-
-        <section class="section alt-panel" id="portfolio">
-          <div class="container">
-            <div class="section-head">
-              <div>
-                <span class="kicker">Engineering portfolio</span>
-                <h2>engineerhub.com/@username</h2>
-              </div>
-            </div>
-
-            <div class="portfolio-layout">
-              <div class="portfolio-card">
-                <div class="portfolio-header">
-                  <span class="avatar"></span>
-                  <div>
-                    <h3>Priya Nair</h3>
-                    <p>Electronics & Embedded Systems</p>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <p>About</p>
-                  <p>Projects</p>
-                  <p>Skills</p>
-                  <p>Experience</p>
-                  <p>Achievements</p>
-                </div>
-              </div>
-              <div class="portfolio-stack">
-                <div class="mini-portfolio">Template A</div>
-                <div class="mini-portfolio">Template B</div>
-                <div class="mini-portfolio">Template C</div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section" id="docs">
-          <div class="container">
-            <div class="section-head">
-              <div>
-                <span class="kicker">Project documentation</span>
-                <h2>Generate polished engineering documents.</h2>
-              </div>
-            </div>
-
-            <div class="doc-grid">
-              <div class="doc-item">Project Report</div>
-              <div class="doc-item">Abstract</div>
-              <div class="doc-item">Synopsis</div>
-              <div class="doc-item">Problem Statement</div>
-              <div class="doc-item">Methodology</div>
-              <div class="doc-item">Literature Review</div>
-              <div class="doc-item">Conclusion</div>
-              <div class="doc-item">PPT Structure</div>
-              <div class="doc-item">Viva Questions</div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section alt-panel" id="dashboard">
-          <div class="container">
-            <div class="section-head">
-              <div>
-                <span class="kicker">Engineer dashboard</span>
-                <h2>Built for serious engineering work.</h2>
-              </div>
-            </div>
-
-            <div class="logged-dashboard">
-              <aside class="side-nav">
-                <span>Overview</span>
-                <span>Tools</span>
-                <span>EngineerAI</span>
-                <span>Learn</span>
-                <span>Projects</span>
-                <span>Exams</span>
-                <span>Career</span>
-                <span>Resume</span>
-                <span>Portfolio</span>
-                <span>Resources</span>
-                <span>Community</span>
-                <span>Settings</span>
-              </aside>
-
-              <div class="dash-panel-grid">
-                <div class="dash-card">
-                  <label>CGPA</label>
-                  <h3>8.82</h3>
-                </div>
-                <div class="dash-card">
-                  <label>Learning progress</label>
-                  <h3>72%</h3>
-                </div>
-                <div class="dash-card">
-                  <label>Projects</label>
-                  <h3>06</h3>
-                </div>
-                <div class="dash-card">
-                  <label>Career progress</label>
-                  <h3>64%</h3>
-                </div>
-                <div class="dash-card wide-card">
-                  <label>Upcoming exams</label>
-                  <ul>
-                    <li>Fluid mechanics — 2 days</li>
-                    <li>Signals — 4 days</li>
-                  </ul>
-                </div>
-                <div class="dash-card wide-card">
-                  <label>AI recommendations</label>
-                  <ul>
-                    <li>Revise thermodynamics numericals</li>
-                    <li>Fix internship application portfolio gap</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section" id="community">
-          <div class="container">
-            <div class="section-head">
-              <div>
-                <span class="kicker">Community</span>
-                <h2>Engineers who build together.</h2>
-              </div>
-            </div>
-
-            <div class="community-grid">
-              <div class="community-card">
-                <h3>Questions</h3>
-                <p>Ask technical questions and get direct, actionable answers.</p>
-              </div>
-              <div class="community-card">
-                <h3>Projects</h3>
-                <p>Showcase builds, get feedback and collaborate faster.</p>
-              </div>
-              <div class="community-card">
-                <h3>Discussions</h3>
-                <p>Discuss ideas, design choices and engineering trade-offs.</p>
-              </div>
-              <div class="community-card">
-                <h3>Competitions</h3>
-                <p>Stay ready for hackathons, buildathons and technical events.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section alt-panel" id="pricing">
-          <div class="container pricing-wrap">
-            <div class="section-head centered">
-              <div>
-                <span class="kicker">Pricing</span>
-                <h2>Choose the plan that matches your engineering goals.</h2>
-              </div>
-              <div class="billing-toggle" aria-label="Billing toggle">
-                <button class="billing-btn active" data-billing="monthly">Monthly</button>
-                <button class="billing-btn" data-billing="yearly">Yearly</button>
-              </div>
-            </div>
-
-            <div class="pricing-grid">
-              <article class="price-card">
-                <div class="plan-label">Free</div>
-                <h3>Basic</h3>
-                <div class="price"><span class="currency">₹</span><span class="amount" data-monthly="0" data-yearly="0">0</span><small>/month</small></div>
-                <ul>
-                  <li>Basic tools</li>
-                  <li>Basic learning</li>
-                  <li>Basic AI</li>
-                  <li>Community</li>
-                </ul>
-                <button class="secondary-btn full">Get started</button>
-              </article>
-
-              <article class="price-card featured">
-                <div class="plan-label">Popular</div>
-                <h3>Pro</h3>
-                <div class="price"><span class="currency">₹</span><span class="amount" data-monthly="199" data-yearly="1990">199</span><small>/month</small></div>
-                <ul>
-                  <li>Advanced tools</li>
-                  <li>EngineerAI</li>
-                  <li>Project tools</li>
-                  <li>Exam mode</li>
-                  <li>Resume builder</li>
-                  <li>Premium resources</li>
-                </ul>
-                <button class="primary-btn full">Choose Pro</button>
-              </article>
-
-              <article class="price-card">
-                <div class="plan-label">Scale</div>
-                <h3>Pro+</h3>
-                <div class="price"><span class="currency">₹</span><span class="amount" data-monthly="399" data-yearly="3990">399</span><small>/month</small></div>
-                <ul>
-                  <li>Everything in Pro</li>
-                  <li>Advanced AI</li>
-                  <li>Advanced projects</li>
-                  <li>Portfolio</li>
-                  <li>Career tools</li>
-                  <li>Premium templates</li>
-                </ul>
-                <button class="secondary-btn full">Choose Pro+</button>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="section onboarding-section">
-          <div class="container onboarding-wrap">
-            <div class="onboarding-copy">
-              <span class="kicker">Onboarding</span>
-              <h2>What kind of engineer are you?</h2>
-            </div>
-            <div class="choice-grid">
-              <button>CSE</button>
-              <button>ECE</button>
-              <button>Mechanical</button>
-              <button>Civil</button>
-              <button>Electrical</button>
-              <button>Biotech</button>
-              <button>Robotics</button>
-              <button>Aerospace</button>
-              <button>Other</button>
-            </div>
-            <div class="goal-grid">
-              <button>Pass exams</button>
-              <button>Build projects</button>
-              <button>Get internships</button>
-              <button>Get a job</button>
-              <button>Learn engineering</button>
-              <button>Prepare for higher studies</button>
-              <button>Build a portfolio</button>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <footer class="footer">
-        <div class="container footer-wrap">
-          <div>
-            <a href="#home" class="brand footer-brand">
-              <span class="brand-mark">E</span>
-              <span class="brand-word">EngineerHub</span>
-            </a>
-            <p>Build what's next.</p>
-          </div>
-          <div class="footer-links">
-            <a href="#tools">Tools</a>
-            <a href="#engineerai">EngineerAI</a>
-            <a href="#projects">Projects</a>
-            <a href="#career">Career</a>
-            <a href="#pricing">Pricing</a>
           </div>
         </div>
-      </footer>
-    </div>
+      </section>
+
+      <section class="company-strip">
+        <div class="container strip-grid">
+          <span>Mechanical</span>
+          <span>CSE</span>
+          <span>ECE</span>
+          <span>Robotics</span>
+          <span>AI</span>
+          <span>IoT</span>
+          <span>Energy</span>
+          <span>Career</span>
+        </div>
+      </section>
+
+      <section class="section platform-section" id="platform">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="kicker">Why EngineerHub</span>
+              <h2>One platform for everything engineering.</h2>
+            </div>
+          </div>
+
+          <div class="platform-grid">
+            <article class="feature-card">
+              <div class="feature-icon">∑</div>
+              <h3>Engineering toolkit</h3>
+              <p>Math, mechanics, electronics, electrical and CS calculators built around real work.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon">AI</div>
+              <h3>EngineerAI</h3>
+              <p>Concept explanations, project support, viva prep, documentation and technical brainstorming.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon">◧</div>
+              <h3>Project hub</h3>
+              <p>Discover projects, follow architecture, track progress and build with a proper workflow.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon">◎</div>
+              <h3>Learning system</h3>
+              <p>Branch → semester → subject → module → topic with progress and practice built in.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon">▣</div>
+              <h3>Career engine</h3>
+              <p>Roadmaps, portfolios, projects, internship guidance, and interview prep based on your branch.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon">✓</div>
+              <h3>Portfolio + resume</h3>
+              <p>Build a premium engineering identity with templates, exports and professional presentation.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-panel" id="tools">
+        <div class="container">
+          <div class="section-heading split-heading">
+            <div>
+              <span class="kicker">Engineering tools</span>
+              <h2>Your Engineering Toolkit.</h2>
+            </div>
+            <div class="chip-row">
+              <button class="chip active" data-filter="all">All</button>
+              <button class="chip" data-filter="math">Math</button>
+              <button class="chip" data-filter="electrical">Electrical</button>
+              <button class="chip" data-filter="civil">Civil</button>
+              <button class="chip" data-filter="cs">CS</button>
+            </div>
+          </div>
+
+          <div class="tool-grid">
+            <article class="tool-card" data-category="math">
+              <div class="tool-icon">∑</div>
+              <h3>Scientific Calculator</h3>
+              <p>Derivations, matrices, units, and engineering formulas.</p>
+            </article>
+            <article class="tool-card" data-category="math">
+              <div class="tool-icon">⎡⎤</div>
+              <h3>Matrix Solver</h3>
+              <p>Inverse matrices, ranks, eigenvalues and large system solvers.</p>
+            </article>
+            <article class="tool-card" data-category="math">
+              <div class="tool-icon">ƒ</div>
+              <h3>Equation Solver</h3>
+              <p>Polynomial, linear and differential equation support.</p>
+            </article>
+            <article class="tool-card" data-category="mechanical">
+              <div class="tool-icon">⍟</div>
+              <h3>Beam Calculator</h3>
+              <p>Shear, moment, deflection and beam loading analysis.</p>
+            </article>
+            <article class="tool-card" data-category="mechanical">
+              <div class="tool-icon">τ</div>
+              <h3>Torque Calculator</h3>
+              <p>Compute power transmission, angular force and shaft efficiency.</p>
+            </article>
+            <article class="tool-card" data-category="electrical">
+              <div class="tool-icon">Ω</div>
+              <h3>Ohm's Law</h3>
+              <p>Voltage, current and resistance calculations with visual circuit logic.</p>
+            </article>
+            <article class="tool-card" data-category="electrical">
+              <div class="tool-icon">⚡</div>
+              <h3>Circuit Calculator</h3>
+              <p>Series and parallel networks, power and load analysis.</p>
+            </article>
+            <article class="tool-card" data-category="civil">
+              <div class="tool-icon">▦</div>
+              <h3>Concrete Calculator</h3>
+              <p>Estimate quantities, mix ratios and structural requirements.</p>
+            </article>
+            <article class="tool-card" data-category="cs">
+              <div class="tool-icon">⌘</div>
+              <h3>Numerical Methods</h3>
+              <p>Approximations, root-finding and iteration workflows.</p>
+            </article>
+            <article class="tool-card" data-category="cs">
+              <div class="tool-icon">◍</div>
+              <h3>Engineering Statistics</h3>
+              <p>Distributions, error handling and probability-based insight.</p>
+            </article>
+            <article class="tool-card" data-category="mechanical">
+              <div class="tool-icon">≋</div>
+              <h3>Stress Calculator</h3>
+              <p>Stress and strain analysis for materials and structures.</p>
+            </article>
+            <article class="tool-card" data-category="electrical">
+              <div class="tool-icon">▣</div>
+              <h3>Resistor Calculator</h3>
+              <p>Color code decoding and equivalent resistance calculations.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="engineerai">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="kicker">EngineerAI</span>
+              <h2>Meet Your Engineering Copilot.</h2>
+            </div>
+          </div>
+
+          <div class="ai-layout">
+            <div class="ai-panel">
+              <div class="ai-header">
+                <span class="chat-tag user">User</span>
+                <span class="chat-tag ai">EngineerAI</span>
+              </div>
+
+              <div class="chat-window">
+                <div class="bubble user-bubble">
+                  “Explain Bernoulli's equation like I'm seeing it for the first time.”
+                </div>
+                <div class="bubble ai-bubble">
+                  Concept • Formula • Visual explanation • Worked example • Practice question
+                </div>
+              </div>
+
+              <div class="ai-actions">
+                <button>Concept explain</button>
+                <button>Problem-solving</button>
+                <button>Study plan</button>
+                <button>Viva prep</button>
+              </div>
+            </div>
+
+            <div class="insight-stack">
+              <div class="insight-card">
+                <div class="label-row">
+                  <span class="mini-label">Project assistance</span>
+                  <span class="status ok">active</span>
+                </div>
+                <h3>Rover design review</h3>
+                <p>Check torque, power flow, sensor placement and control logic.</p>
+              </div>
+
+              <div class="insight-card highlight-card">
+                <div class="label-row">
+                  <span class="mini-label">Code assistance</span>
+                  <span class="status warn">live</span>
+                </div>
+                <h3>Firmware logic</h3>
+                <p>Generate state machines, calibration logic and sensor-fusion planning.</p>
+              </div>
+
+              <div class="insight-card">
+                <div class="label-row">
+                  <span class="mini-label">Documentation</span>
+                  <span class="status neutral">draft</span>
+                </div>
+                <h3>Project writing</h3>
+                <p>Turn experiments into polished abstracts, reports and viva notes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-panel" id="projects">
+        <div class="container">
+          <div class="section-heading split-heading">
+            <div>
+              <span class="kicker">Project hub</span>
+              <h2>Build Something Real.</h2>
+            </div>
+            <button class="ghost-btn">View all projects</button>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="tag-row"><span>Robotics</span><span>Advanced</span></div>
+              <h3>Autonomous Maze Rover</h3>
+              <div class="project-meta">
+                <div><label>Cost</label><strong>₹7.5k</strong></div>
+                <div><label>Time</label><strong>4 weeks</strong></div>
+                <div><label>Skills</label><strong>ROS, C++</strong></div>
+                <div><label>Parts</label><strong>MCU, motors</strong></div>
+              </div>
+              <button class="secondary-btn small">Start Project</button>
+            </article>
+
+            <article class="project-card">
+              <div class="tag-row"><span>AI</span><span>Intermediate</span></div>
+              <h3>Energy Prediction Model</h3>
+              <div class="project-meta">
+                <div><label>Cost</label><strong>₹4.2k</strong></div>
+                <div><label>Time</label><strong>3 weeks</strong></div>
+                <div><label>Skills</label><strong>Python, ML</strong></div>
+                <div><label>Parts</label><strong>Sensor data</strong></div>
+              </div>
+              <button class="secondary-btn small">Start Project</button>
+            </article>
+
+            <article class="project-card">
+              <div class="tag-row"><span>IoT</span><span>Beginner</span></div>
+              <h3>Smart Irrigation System</h3>
+              <div class="project-meta">
+                <div><label>Cost</label><strong>₹3.1k</strong></div>
+                <div><label>Time</label><strong>2 weeks</strong></div>
+                <div><label>Skills</label><strong>ESP32, APIs</strong></div>
+                <div><label>Parts</label><strong>Soil sensor</strong></div>
+              </div>
+              <button class="secondary-btn small">Start Project</button>
+            </article>
+
+            <article class="project-card">
+              <div class="tag-row"><span>Mechanical</span><span>Advanced</span></div>
+              <h3>3D Printed Gripper</h3>
+              <div class="project-meta">
+                <div><label>Cost</label><strong>₹2.8k</strong></div>
+                <div><label>Time</label><strong>2 weeks</strong></div>
+                <div><label>Skills</label><strong>CAD, FEA</strong></div>
+                <div><label>Parts</label><strong>PLA, servo</strong></div>
+              </div>
+              <button class="secondary-btn small">Start Project</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="learn">
+        <div class="container">
+          <div class="section-heading split-heading">
+            <div>
+              <span class="kicker">Learning</span>
+              <h2>Learning built like a system.</h2>
+            </div>
+            <button class="ghost-btn">Track progress</button>
+          </div>
+
+          <div class="learn-layout">
+            <div class="curriculum-panel">
+              <div class="branch-card active">
+                <div class="branch-title">CSE</div>
+                <ul>
+                  <li>Semester 6</li>
+                  <li>Operating Systems</li>
+                  <li>Module 4 • Memory Management</li>
+                  <li>Topic • Paging & Virtual Memory</li>
+                </ul>
+              </div>
+              <div class="branch-card">
+                <div class="branch-title">ECE</div>
+                <ul>
+                  <li>Semester 5</li>
+                  <li>Signals & Systems</li>
+                  <li>Module 2 • Frequency domain</li>
+                  <li>Topic • Fourier Transform</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="topic-panel">
+              <div class="topic-header">
+                <span class="topic-tag">Topic</span>
+                <h3>Bernoulli's Principle</h3>
+              </div>
+
+              <div class="topic-grid">
+                <div class="topic-block">
+                  <label>Concept</label>
+                  <p>Energy conservation in fluid flow and pressure–velocity trade-offs.</p>
+                </div>
+                <div class="topic-block">
+                  <label>Formula</label>
+                  <p>P + 0.5ρv² + ρgh = constant</p>
+                </div>
+                <div class="topic-block">
+                  <label>Visual explanation</label>
+                  <p>Streamline diagram showing pressure zones and high-speed flow.</p>
+                </div>
+                <div class="topic-block">
+                  <label>Practice</label>
+                  <p>Scenario-based questions with instant evaluation and concept hints.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-panel" id="exams">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="kicker">Exam mode</span>
+              <h2>Your Exam Command Center</h2>
+            </div>
+          </div>
+
+          <div class="exam-layout">
+            <div class="exam-grid">
+              <div class="exam-card big-card">
+                <span>7 DAYS TO EXAM</span>
+                <h3>Thermodynamics</h3>
+                <p>Every day is optimized according to your weak spots and current score trend.</p>
+              </div>
+              <div class="mini-card">Mock tests</div>
+              <div class="mini-card">Flashcards</div>
+              <div class="mini-card">Formula sheets</div>
+              <div class="mini-card">Viva prep</div>
+              <div class="mini-card">Previous questions</div>
+            </div>
+
+            <div class="schedule-panel">
+              <ul>
+                <li><span>DAY 1</span><b>Force & stress revision</b></li>
+                <li><span>DAY 2</span><b>Numerical practice set</b></li>
+                <li><span>DAY 3</span><b>Mock test 01</b></li>
+                <li><span>DAY 4</span><b>Viva questions review</b></li>
+                <li><span>DAY 5</span><b>Formula sheet recall</b></li>
+                <li><span>DAY 6</span><b>Weak topic remediation</b></li>
+                <li><span>DAY 7</span><b>Final sprint</b></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="career">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="kicker">Career center</span>
+              <h2>Design Your Engineering Career.</h2>
+            </div>
+          </div>
+
+          <div class="career-grid">
+            <div class="career-column">
+              <h3>Mechanical</h3>
+              <ul>
+                <li>Robotics</li>
+                <li>Automotive</li>
+                <li>Aerospace</li>
+                <li>Manufacturing</li>
+                <li>Energy</li>
+                <li>Software</li>
+                <li>Product</li>
+              </ul>
+            </div>
+            <div class="career-column">
+              <h3>CSE</h3>
+              <ul>
+                <li>Software</li>
+                <li>AI/ML</li>
+                <li>Data</li>
+                <li>Cybersecurity</li>
+                <li>Cloud</li>
+                <li>Product</li>
+              </ul>
+            </div>
+            <div class="career-column">
+              <h3>ECE</h3>
+              <ul>
+                <li>Embedded</li>
+                <li>VLSI</li>
+                <li>Semiconductor</li>
+                <li>Robotics</li>
+                <li>Communications</li>
+                <li>Software</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-panel" id="resume">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="kicker">Resume builder</span>
+              <h2>Build a resume that reads like a real engineer.</h2>
+            </div>
+          </div>
+
+          <div class="resume-layout">
+            <div class="resume-panel">
+              <div class="resume-paper">
+                <div class="resume-top">
+                  <div>
+                    <h3>Rohit Sharma</h3>
+                    <p>Mechanical Engineer • Robotics</p>
+                  </div>
+                  <span>Portfolio-ready</span>
+                </div>
+
+                <div class="resume-section">
+                  <h4>Projects</h4>
+                  <ul>
+                    <li>Autonomous rover for warehouse mapping</li>
+                    <li>Battery health monitoring for EV prototype</li>
+                  </ul>
+                </div>
+
+                <div class="resume-section">
+                  <h4>Skills</h4>
+                  <p>SolidWorks, MATLAB, Arduino, Embedded C, CAD, FEA</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="resume-tools">
+              <div class="tool-item">Education</div>
+              <div class="tool-item">Skills</div>
+              <div class="tool-item">Projects</div>
+              <div class="tool-item">Experience</div>
+              <div class="tool-item">Internships</div>
+              <div class="tool-item">Certifications</div>
+              <div class="tool-item highlight">Export PDF</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="portfolio">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="kicker">Engineering portfolio</span>
+              <h2>engineerhub.com/@username</h2>
+            </div>
+          </div>
+
+          <div class="portfolio-layout">
+            <div class="portfolio-card">
+              <div class="profile-line">
+                <span class="avatar"></span>
+                <div>
+                  <h3>Priya Nair</h3>
+                  <p>Electronics & Embedded Systems</p>
+                </div>
+              </div>
+
+              <div class="portfolio-body">
+                <span>About</span>
+                <span>Projects</span>
+                <span>Skills</span>
+                <span>Experience</span>
+                <span>Achievements</span>
+              </div>
+            </div>
+
+            <div class="portfolio-stack">
+              <div class="mini-portfolio">Template A</div>
+              <div class="mini-portfolio">Template B</div>
+              <div class="mini-portfolio">Template C</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-panel" id="docs">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="kicker">Project documentation</span>
+              <h2>Generate polished engineering documents.</h2>
+            </div>
+          </div>
+
+          <div class="doc-grid">
+            <div class="doc-item">Project Report</div>
+            <div class="doc-item">Abstract</div>
+            <div class="doc-item">Synopsis</div>
+            <div class="doc-item">Problem Statement</div>
+            <div class="doc-item">Methodology</div>
+            <div class="doc-item">Literature Review</div>
+            <div class="doc-item">Conclusion</div>
+            <div class="doc-item">PPT Structure</div>
+            <div class="doc-item">Viva Questions</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="dashboard">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="kicker">Engineer dashboard</span>
+              <h2>Built for serious engineering work.</h2>
+            </div>
+          </div>
+
+          <div class="dashboard-main">
+            <aside class="side-nav">
+              <span>Overview</span>
+              <span>Tools</span>
+              <span>EngineerAI</span>
+              <span>Learn</span>
+              <span>Projects</span>
+              <span>Exams</span>
+              <span>Career</span>
+              <span>Resume</span>
+              <span>Portfolio</span>
+              <span>Resources</span>
+              <span>Community</span>
+              <span>Settings</span>
+            </aside>
+
+            <div class="dashboard-grid">
+              <div class="dash-card">
+                <label>CGPA</label>
+                <h3>8.82</h3>
+              </div>
+              <div class="dash-card">
+                <label>Learning progress</label>
+                <h3>72%</h3>
+              </div>
+              <div class="dash-card">
+                <label>Projects</label>
+                <h3>06</h3>
+              </div>
+              <div class="dash-card">
+                <label>Career progress</label>
+                <h3>64%</h3>
+              </div>
+              <div class="dash-card wide">
+                <label>Upcoming exams</label>
+                <ul>
+                  <li>Fluid mechanics — 2 days</li>
+                  <li>Signals — 4 days</li>
+                </ul>
+              </div>
+              <div class="dash-card wide">
+                <label>AI recommendations</label>
+                <ul>
+                  <li>Revise thermodynamics numericals</li>
+                  <li>Fix portfolio gap for internship applications</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-panel" id="community">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="kicker">Community</span>
+              <h2>Engineers who build together.</h2>
+            </div>
+          </div>
+
+          <div class="community-grid">
+            <div class="community-card">
+              <h3>Questions</h3>
+              <p>Ask technical questions and get direct, actionable answers.</p>
+            </div>
+            <div class="community-card">
+              <h3>Projects</h3>
+              <p>Showcase builds, get feedback and collaborate faster.</p>
+            </div>
+            <div class="community-card">
+              <h3>Discussions</h3>
+              <p>Discuss ideas, design choices and engineering trade-offs.</p>
+            </div>
+            <div class="community-card">
+              <h3>Competitions</h3>
+              <p>Stay ready for hackathons, events and technical challenges.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="pricing">
+        <div class="container pricing-wrap">
+          <div class="section-heading centered">
+            <div>
+              <span class="kicker">Pricing</span>
+              <h2>Choose the plan that matches your engineering goals.</h2>
+            </div>
+            <div class="billing-toggle">
+              <button class="billing-btn active" data-billing="monthly">Monthly</button>
+              <button class="billing-btn" data-billing="yearly">Yearly</button>
+            </div>
+          </div>
+
+          <div class="pricing-grid">
+            <article class="price-card">
+              <div class="plan-label">Free</div>
+              <h3>Basic</h3>
+              <div class="price-wrap">
+                <span class="currency">₹</span>
+                <span class="amount" data-monthly="0" data-yearly="0">0</span>
+                <small>/month</small>
+              </div>
+              <ul>
+                <li>Basic tools</li>
+                <li>Basic learning</li>
+                <li>Basic AI</li>
+                <li>Community</li>
+              </ul>
+              <button class="secondary-btn full">Get started</button>
+            </article>
+
+            <article class="price-card featured">
+              <div class="plan-label">Popular</div>
+              <h3>Pro</h3>
+              <div class="price-wrap">
+                <span class="currency">₹</span>
+                <span class="amount" data-monthly="199" data-yearly="1990">199</span>
+                <small>/month</small>
+              </div>
+              <ul>
+                <li>Advanced tools</li>
+                <li>EngineerAI</li>
+                <li>Project tools</li>
+                <li>Exam mode</li>
+                <li>Resume builder</li>
+                <li>Premium resources</li>
+              </ul>
+              <button class="primary-btn full">Choose Pro</button>
+            </article>
+
+            <article class="price-card">
+              <div class="plan-label">Scale</div>
+              <h3>Pro+</h3>
+              <div class="price-wrap">
+                <span class="currency">₹</span>
+                <span class="amount" data-monthly="399" data-yearly="3990">399</span>
+                <small>/month</small>
+              </div>
+              <ul>
+                <li>Everything in Pro</li>
+                <li>Advanced AI</li>
+                <li>Advanced projects</li>
+                <li>Portfolio</li>
+                <li>Career tools</li>
+                <li>Premium templates</li>
+              </ul>
+              <button class="secondary-btn full">Choose Pro+</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section onboarding">
+        <div class="container onboarding-wrap">
+          <div class="onboarding-copy">
+            <span class="kicker">Onboarding</span>
+            <h2>What kind of engineer are you?</h2>
+          </div>
+
+          <div class="choice-row">
+            <button>CSE</button>
+            <button>ECE</button>
+            <button>Mechanical</button>
+            <button>Civil</button>
+            <button>Electrical</button>
+            <button>Biotech</button>
+            <button>Robotics</button>
+            <button>Aerospace</button>
+            <button>Other</button>
+          </div>
+
+          <div class="goal-row">
+            <button>Pass exams</button>
+            <button>Build projects</button>
+            <button>Get internships</button>
+            <button>Get a job</button>
+            <button>Learn engineering</button>
+            <button>Prepare for higher studies</button>
+            <button>Build a portfolio</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-wrap">
+        <div>
+          <a href="#home" class="brand footer-brand">
+            <span class="brand-mark">E</span>
+            <span class="brand-word">EngineerHub</span>
+          </a>
+          <p>Build what's next.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#tools">Tools</a>
+          <a href="#engineerai">EngineerAI</a>
+          <a href="#projects">Projects</a>
+          <a href="#career">Career</a>
+          <a href="#pricing">Pricing</a>
+        </div>
+      </div>
+    </footer>
 
     <div class="command-palette" id="commandPalette" aria-hidden="true">
       <div class="palette-box">
@@ -869,4 +915,3 @@
     <script src="script.js"></script>
   </body>
 </html>
-
